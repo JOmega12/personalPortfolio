@@ -11,6 +11,7 @@ export const Projects = () => {
             <div className="line"></div>
          </div>
 
+         {/* need to map all the items */}
          <div>
             <div>
                <h2></h2>
