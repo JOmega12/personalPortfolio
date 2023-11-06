@@ -11,8 +11,10 @@ function App() {
   return (
     <>
       <Navbar />
-      <div style={{fontFamily: "Montserrat, Inter, sans-serif"}}
-        className={styles.parentComponent}
+      <div 
+      // style={{fontFamily: "Montserrat, Inter, sans-serif"}}
+      // className={styles.parentComponent}
+        className={`font-Montserrat font-Inter font-sans ${styles.parentComponent}`}
       >
         <Hero />
         <Projects />
