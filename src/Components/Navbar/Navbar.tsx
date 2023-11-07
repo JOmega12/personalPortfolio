@@ -1,5 +1,5 @@
 import { useState } from "react";
-import styles from "./Navbar.module.css";
+// import styles from "./Navbar.module.css";
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -7,20 +7,21 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const NavLinks = () => {
   const list = [
-    { name: "Home" },
-    { name: "About" },
-    { name: "Project" },
-    { name: "Contact" },
+    { name: "Home", ref: '/'},
+    { name: "About", ref: 'about'},
+    { name: "Project", ref: 'project' },
+    { name: "Contact", ref: 'contact' },
   ];
   return (
-    <ul className={styles.unstyledList}>
+    <ul className='flex gap-5 text-base font-medium tracking-wide lg:flex-row'>
       {/* <li>Home</li>
                   <li>About</li>
                   <li>Project</li>
                   <li>Contact</li> */}
+      {/* you need the id for the specific site then be able to click on it */}
       {list.map((item, index) => (
-        <li className={styles.unstyledListOfList} key={index}>
-          {item.name}
+        <li className='cursor:pointer' key={index}>
+          <a href={item.ref}>{item.name}</a>
         </li>
       ))}
     </ul>
@@ -30,27 +31,35 @@ const NavLinks = () => {
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const toggleNavBar = () => {
+  const toggleNavbar = () => {
     setIsOpen(!isOpen);
   };
 
-//   might have to put in for mobile for tailwind
-
   return (
     <header>
-      <nav className={styles.parentComponent}>
-        <h2 className={styles.name}>Jensen Omega</h2>
-        <div className={styles.listContainer}>
+      <nav className='flex justify-between items-center bg-[#121E27] text-white w-full pt-5 '>
+        <h2 className='text-2xl font-bold tracking-wide cursor-pointer'>Jensen Omega</h2>
+        <div className='hidden justify-between gap-4 text-xl'>
          <NavLinks />
         </div>
-        <div className={styles.mobile}>
-            <button onClick={() => toggleNavBar()}>
-            {isOpen
-               ? <FontAwesomeIcon icon={faTimes} />
-               : <FontAwesomeIcon icon={faBars} />
-            }
+        <div className="lg:hidden">
+            <button onClick={() => toggleNavbar()}>
+               {isOpen 
+                  ? <FontAwesomeIcon icon={faTimes} className="text-3xl text-white"/>
+                  : <FontAwesomeIcon icon={faBars}
+                  className="3xl"
+                  />  
+               }
             </button>
-         </div>
+        </div>
+        {isOpen && (
+          <div className="min-[320px]:flex-col md:hidden w-full absolute top-[77px] left-0 right-0 bg-[#121E27] text-center h-full text-white">
+              <NavLinks />
+            {/* <div className="text-white h-full flex flex-col text-center">
+              <NavLinks />
+            </div> */}
+          </div>
+        )}
       </nav>
     </header>
   );

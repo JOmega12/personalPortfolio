@@ -6,7 +6,8 @@ export default {
   ],
   colors: {
     'mainColor': '#FF715B',
-    cream: '#ECE6DB',
+    'bg-dark': '#121E27',
+    'cream': '#ECE6DB'
   },
   theme: {
     screens: {

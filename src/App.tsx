@@ -9,7 +9,7 @@ import styles from './App.module.css';
 function App() {
 
   return (
-    <>
+    <div className="px-32 bg-[#121E27]">
       <Navbar />
       <div 
       // style={{fontFamily: "Montserrat, Inter, sans-serif"}}
@@ -20,7 +20,7 @@ function App() {
         <Projects />
         <Footer />
       </div>
-    </>
+    </div>
   )
 }
 
