@@ -13,15 +13,11 @@ const NavLinks = () => {
     { name: "Contact", ref: 'contact' },
   ];
   return (
-    <ul className='flex gap-5 text-base font-medium tracking-wide lg:flex-row'>
-      {/* <li>Home</li>
-                  <li>About</li>
-                  <li>Project</li>
-                  <li>Contact</li> */}
+    <ul className='flex gap-5 text-base font-medium tracking-wide min-[320px]:flex-col md:flex-row mt-5 max-[600px]:text-xl'>
       {/* you need the id for the specific site then be able to click on it */}
       {list.map((item, index) => (
-        <li className='cursor:pointer' key={index}>
-          <a href={item.ref}>{item.name}</a>
+        <li className='cursor:pointer p-5 hover:underline underline-offset-8 hover:decoration-[#FF715B] decoration-2' key={index}>
+          <a href={item.ref} >{item.name}</a>
         </li>
       ))}
     </ul>
@@ -38,16 +34,15 @@ export const Navbar = () => {
   return (
     <header>
       <nav className='flex justify-between items-center bg-[#121E27] text-white w-full pt-5 '>
-        <h2 className='text-2xl font-bold tracking-wide cursor-pointer'>Jensen Omega</h2>
-        <div className='hidden justify-between gap-4 text-xl'>
+        <h2 className='text-3xl font-bold tracking-wide cursor-pointer w -full max-[640px]:pl-5 md:pl-3'>Jensen Omega</h2>
+        <div className='hidden md:flex flex-row justify-between gap-4 text-xl'>
          <NavLinks />
         </div>
-        <div className="lg:hidden">
+        <div className="md:hidden">
             <button onClick={() => toggleNavbar()}>
                {isOpen 
                   ? <FontAwesomeIcon icon={faTimes} className="text-3xl text-white"/>
-                  : <FontAwesomeIcon icon={faBars}
-                  className="3xl"
+                  : <FontAwesomeIcon icon={faBars} className="3xl"
                   />  
                }
             </button>
@@ -55,9 +50,6 @@ export const Navbar = () => {
         {isOpen && (
           <div className="min-[320px]:flex-col md:hidden w-full absolute top-[77px] left-0 right-0 bg-[#121E27] text-center h-full text-white">
               <NavLinks />
-            {/* <div className="text-white h-full flex flex-col text-center">
-              <NavLinks />
-            </div> */}
           </div>
         )}
       </nav>
