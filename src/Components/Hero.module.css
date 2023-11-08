@@ -6,3 +6,9 @@
    background: #FF715B;
    border-radius: 9999px
 }
+
+.backgroundSmoke {
+   position: absolute;
+   box-shadow: -6px -7.5px 11.5px 18.5px rgba(255, 114, 92, 0.76);
+   z-index: 1;
+}
