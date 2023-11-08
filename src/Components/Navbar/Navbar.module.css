@@ -36,10 +36,3 @@
 .unstyledListOfList {
    cursor: pointer;
 }
-
-/* 
-@media (min-width: 768px) {
-   .mobile {
-      display: none;
-   }
-} */

@@ -1,6 +1,4 @@
 import { useState } from "react";
-// import styles from "./Navbar.module.css";
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -26,7 +24,6 @@ const NavLinks = () => {
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-
   const toggleNavbar = () => {
     setIsOpen(!isOpen);
   };
