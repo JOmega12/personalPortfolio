@@ -11,7 +11,7 @@ const NavLinks = () => {
     { name: "Contact", ref: 'contact' },
   ];
   return (
-    <ul className='flex gap-5 text-base font-medium tracking-wide min-[320px]:flex-col md:flex-row mt-5 max-[600px]:text-xl'>
+    <ul className='flex md:gap-5 text-base font-medium tracking-wide min-[320px]:flex-col md:flex-row mt-5 max-[600px]:text-xl max-[600px]:bg-[#121E27] max-[600px]:w-full z-10'>
       {/* you need the id for the specific site then be able to click on it */}
       {list.map((item, index) => (
         <li className='cursor:pointer p-5 hover:underline underline-offset-8 hover:decoration-[#FF715B] decoration-2' key={index}>
@@ -30,12 +30,12 @@ export const Navbar = () => {
 
   return (
     <header>
-      <nav className='flex justify-between items-center bg-[#121E27] text-white w-full pt-5 '>
+      <nav className='flex items-center bg-[#121E27] text-white w-full pt-5 fixed max-[900px]:w-full max-[900px]:pb-5 z-10'>
         <h2 className='text-3xl font-bold tracking-wide cursor-pointer w -full max-[640px]:pl-5 md:pl-3'>Jensen Omega</h2>
-        <div className='hidden md:flex flex-row justify-between gap-4 text-xl'>
+        <div className='hidden md:flex flex-row justify-between gap-4 text-xl ml-auto'>
          <NavLinks />
         </div>
-        <div className="md:hidden">
+        <div className="md:hidden fixed right-10">
             <button onClick={() => toggleNavbar()}>
                {isOpen 
                   ? <FontAwesomeIcon icon={faTimes} className="text-3xl text-white"/>

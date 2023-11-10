@@ -8,7 +8,7 @@ import BackgroundCircle from '../assets/Ellipse 13.svg';
 export const Hero = () => {
 //  !need to work on circle shadow behind profile photo
    return(
-      <div className="flex flex-col md:flex-row min-[368px]:flex-col gap-6 md:gap-32">
+      <div className="flex flex-col md:flex-row min-[368px]:flex-col gap-6 md:gap-32 pt-32">
          <div className='flex flex-col max-[900px]:justify-center max-[900px]:items-center'>
             <div className='flex max-[900px]:items-center min-[360px]:mt-8'>
                <h2 className='md:text-5xl min-[360px]:text-3xl font-bold '>Hello</h2>
