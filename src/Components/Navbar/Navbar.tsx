@@ -30,8 +30,8 @@ export const Navbar = () => {
 
   return (
     <header className="">
-      <nav className='flex items-center bg-[#121E27] text-white w-full pt-5 fixed max-[900px]:w-full z-10 text-center'>
-        <h2 className='text-3xl font-bold tracking-wide cursor-pointer w -full max-[640px]:pl-5 md:pl-8 lg:pl-32'>Jensen Omega</h2>
+      <nav className='flex items-center bg-[#121E27] text-white w-full p-5 fixed max-[900px]:w-full z-10 text-center'>
+        <h2 className='text-3xl font-bold tracking-wide cursor-pointer max-[640px]:pl-5 md:pl-8 lg:pl-32'>Jensen Omega</h2>
         <div className='hidden md:flex flex-row text-xl ml-auto md:pr-3 lg:pr-40'>
          <NavLinks />
         </div>
@@ -45,7 +45,7 @@ export const Navbar = () => {
             </button>
         </div>
         {isOpen && (
-          <div className="min-[320px]:flex-col md:hidden w-full absolute top-[77px] left-0 right-0 bg-[#121E27] text-center h-full text-white">
+          <div className="min-[320px]:flex-col md:hidden w-full absolute top-[60px] left-0 right-0 bg-[#121E27] text-center h-full text-white">
               <NavLinks />
           </div>
         )}
