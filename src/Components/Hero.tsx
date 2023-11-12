@@ -18,7 +18,6 @@ export const Hero = () => {
                </div>
             </div>
 
-            {/* the reason why the navbar goes over because it becomes the relative, how do I stop the Im Jensen from going over the navbar styling? And How do I get the navbar to be full height of the screen? */}
             <div className=' relative
             md:ml-24 p-4 min-[360px]:items-center min-[360px]:text-center
             min-[360px]:ml-0 min-[360px]:py-5
