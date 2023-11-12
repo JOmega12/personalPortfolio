@@ -8,9 +8,9 @@ import BackgroundCircle from '../assets/Ellipse 13.svg';
 export const Hero = () => {
 //  !need to work on circle shadow behind profile photo
    return(
-      <div className="flex flex-col md:flex-row min-[368px]:flex-col gap-6 md:gap-32 pt-32">
+      <div className="flex flex-col md:flex-row min-[368px]:flex-col md:gap-1 lg:gap-6 sm:pt-20 md:pt-0 lg:pt-32">
          <div className='flex flex-col max-[900px]:justify-center max-[900px]:items-center'>
-            <div className='flex max-[900px]:items-center min-[360px]:mt-8'>
+            <div className='flex max-[900px]:items-center min-[360px]:mt-2'>
                <h2 className='md:text-5xl min-[360px]:text-3xl font-bold '>Hello</h2>
                <div className='ml-[2px]'>
                   <img src={Period} alt="period" 
@@ -19,17 +19,17 @@ export const Hero = () => {
             </div>
 
             <div className=' relative
-            md:ml-24 p-4 min-[360px]:items-center min-[360px]:text-center
+            md:ml-24 lg:ml-2 p-4 min-[360px]:items-center min-[360px]:text-center
             min-[360px]:ml-0 min-[360px]:py-5
             '>
                <div className='absolute 
-               md:-left-36  md:top-1 md:bottom-0 mt-10
+               md:-left-36 lg:-left-6 md:top-1 md:bottom-0 mt-10
                min-[360px]:left-2 min-[360px]:bottom-0 min-[360px]:top-6
                '>
                   <img src={Line} alt="line"
                   className=''/>
                </div>
-               <h2 className='md:text-5xl min-[360px]:text-3xl md:font-medium sm:font-light z-0'>Im Jensen</h2>
+               <h2 className=' md:text-3xl lg:text-5xl min-[360px]:text-3xl md:font-medium sm:font-light z-0'>Im Jensen</h2>
             </div>
             
             <h1 className='md:text-[55px] min-[360px]:text-3xl font-size font-bold break-keep overflow-hidden' 

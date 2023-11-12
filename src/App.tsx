@@ -11,13 +11,13 @@ function App() {
   // !Rework navbar in mobile
   // !work on hero for mobile
   return (
-    <div className="lg:px-28 bg-[#121E27] w-screen">
+    <div className="bg-[#121E27]">
       <Navbar />
       <div 
       // style={{fontFamily: "Montserrat, Inter, sans-serif"}}
       // className={styles.parentComponent}
         // className={`font-Montserrat font-Inter font-sans ${styles.parentComponent}`}
-        className={'font-Montserrat font-Inter font-sans flex flex-col items-center justify-center w-full min-h-screen p-5 bg-[#121E27] text-white min-[320px]:px-8 max-[900px]:pt-20'}
+        className={'font-Montserrat font-Inter font-sans flex flex-col items-center justify-center min-h-screen p-5 bg-[#121E27] text-white min-[320px]:px-8 sm:pt-20 md:pt-10'}
       >
         <Hero />
         <Projects />

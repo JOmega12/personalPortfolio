@@ -29,10 +29,10 @@ export const Navbar = () => {
   };
 
   return (
-    <header>
-      <nav className='flex items-center bg-[#121E27] text-white w-full pt-5 fixed max-[900px]:w-full max-[900px]:pb-5 z-10'>
-        <h2 className='text-3xl font-bold tracking-wide cursor-pointer w -full max-[640px]:pl-5 md:pl-3'>Jensen Omega</h2>
-        <div className='hidden md:flex flex-row justify-between gap-4 text-xl ml-auto'>
+    <header className="">
+      <nav className='flex items-center bg-[#121E27] text-white w-full pt-5 fixed max-[900px]:w-full z-10 text-center'>
+        <h2 className='text-3xl font-bold tracking-wide cursor-pointer w -full max-[640px]:pl-5 md:pl-8 lg:pl-32'>Jensen Omega</h2>
+        <div className='hidden md:flex flex-row text-xl ml-auto md:pr-3 lg:pr-40'>
          <NavLinks />
         </div>
         <div className="md:hidden fixed right-10">
