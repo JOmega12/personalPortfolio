@@ -17,16 +17,21 @@ export const Skills = () => {
     { name: "Version Control", icon: GIT },
   ];
   return (
-    <div className="flex flex-row flex-wrap align-center mt-5">
+    <div className="flex flex-row flex-wrap align-center mt-5
+    md:px-2 min-[360px]:justify-center gap-4
+    ">
       {/* map this part of the items */}
       {skillsIcons.map((item, index) => (
-        <div key={index} className="w-full md:w-1/3 lg:w-1/4 xl:w-1/5 mb-4 p-4
+         // skills section still needs the icons to be wider
+        <div key={index} className="w-1/3 md:w-1/3 lg:w-1/4 xl:w-1/5 mb-4 p-3
+         hover:border-2 hover:rounded-md 
+         hover:border-[#81A4A6]
         ">
           <div>
             <div className="circle"></div>
             <div className="line"></div>
           </div>
-          <div className="flex flex-row gap-2">
+          <div className="flex min-[360px]:flex-col md:flex-row gap-2">
             <span>
               {/* <div className='w-[60px] h-[60px] bg-[transparent]'>
                         <img src={item.icon} alt={item.name} 
@@ -36,10 +41,11 @@ export const Skills = () => {
               <img
                 src={item.icon}
                 alt={item.name}
-                className="w-[60px] h-[60px] bg-[transparent]"
+               //   min-[360px]:w-[50px] min-[360px]:h-[50px]
+                className=" w-[80px] h-[80px] bg-[transparent]"
               />
             </span>
-            <p className="mt-8 text-base">{item.name}</p>
+            <p className="mt-8 text-base max-[765px]:text-center md:ml-3">{item.name}</p>
           </div>
         </div>
       ))}
