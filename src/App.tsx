@@ -4,7 +4,7 @@ import { AboutMe } from "./Components/AboutMe"
 import { Footer } from "./Components/Footer/Footer"
 import { Hero } from "./Components/Hero"
 import { Navbar } from "./Components/Navbar/Navbar"
-import { Projects } from "./Components/Projects/Projects"
+import { Projects } from "./Components/Projects"
 
 function App() {
 
