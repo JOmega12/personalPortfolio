@@ -33,15 +33,9 @@ export const Skills = () => {
           </div>
           <div className="flex min-[360px]:flex-col md:flex-row gap-2">
             <span>
-              {/* <div className='w-[60px] h-[60px] bg-[transparent]'>
-                        <img src={item.icon} alt={item.name} 
-                        className='w-[60px] h-[60px] bg-[transparent]'
-                        />
-                     </div> */}
               <img
                 src={item.icon}
                 alt={item.name}
-               //   min-[360px]:w-[50px] min-[360px]:h-[50px]
                 className=" w-[80px] h-[80px] bg-[transparent]"
               />
             </span>
