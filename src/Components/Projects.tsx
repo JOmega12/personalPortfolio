@@ -1,11 +1,17 @@
 import verticalLine from '../assets/verticalLine.svg';
 import dot from '../assets/period.svg';
+import WelcomeCoffeeImage from '../assets/ProjectImages/welcomeCoffeeImage.png'
+
 
 export const Projects = () => {
 // ** mc: #ff715b
    
    const projectInfo= [
-      { skills: ['HTML/CSS', 'Tailwind', 'Typescript', 'Javascript'], name: 'WelcomeCoffee', description: '', IMG: '',},
+      { skills: ['HTML/CSS', 'Tailwind', 'Typescript', 'Javascript', 'React-Router'], name: 'WelcomeCoffee', description: 'This project utilizes various technologies to enable users to create personalized coffee ingredients. Upon logging in, users can access their favorite coffee data. It applies React and JavaScript concepts, from abstracting components to managing data structures. Additionally, it establishes a JSON server to generate an API for tracking user favorites and login details.', image: WelcomeCoffeeImage,},
+      // { skills: ['HTML/CSS', 'Javascript'], name: 'Ecommerce Website', description: '', IMG: '',},
+      // { skills: ['HTML/CSS', 'Node.Js', 'Javascript'], name: 'Battleship', description: 'Used Javascript to implement basic data structures through the game of Battleship. Used a terminal to display ships and tracked where ships are hit or missed with the help of Node.js', IMG: '',},
+      // { skills: ['HTML/CSS', 'Node.Js', 'Javascript'], name: 'Movie Titles API', description: 'Uses a public movie API to build a collection movie list that sorts from A to Z or vice versa. It also counts how many movies in each container and adds user\'s favorite movies into another container', IMG: '',},
+      // { skills: ['HTML/CSS', '', 'Javascript'], name: 'Javascript Calculator', description: 'Uses simple algorithm concepts in Javascript to produce an arithmetic result in a terminal', IMG: '',},
       
 
    ]
@@ -28,21 +34,30 @@ export const Projects = () => {
          </div>
 
          {/* need to map all the items */}
-         <div>
-            <div>
-               <h2></h2>
-               <ul className="skills">
-                  <li></li>
-               </ul>
-               <p></p>
-               <button>View Github</button>
-               <button>View Project</button>
+
+         {projectInfo.map((item, index) => (   
+            <div key={index} className='flex min-[360px]:flex-col md:flex-row '>
+               <div>
+                  <h2>{item.name}</h2>
+                  <ul className="skills">
+                     {item.skills.map((element, index) => (
+                     <li key={index}>{element}</li>
+                     ))}
+                  </ul>
+                  <p>{item.description}</p>
+                  <button>View Github</button>
+                  <button>View Project</button>
+               </div>
+               <div>
+                  <div className="rectangle"></div>
+                  <div className='w-[350px] h-[350px]'>                     
+                     <img src={item.image} alt="WelcomeCoffee website image" 
+                     className='w-full h-full'
+                     />
+                  </div>
+               </div>
             </div>
-            <div>
-               <div className="rectangle"></div>
-               <img src="" alt="" />
-            </div>
-         </div>
+         ))}
       </section>
    )
 }
