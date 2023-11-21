@@ -34,9 +34,7 @@ export const Projects = () => {
             </div>
          </div>
          <img src="../assets/ProjectImages/movietitles2.png" alt="" />
-         {/* need to map all the items */}
 
-{/* min-[360px]:flex-col */}
          {projectInfo.map((item, index) => (   
             <div key={index} className={`flex min-[360px]:flex-col md:flex-row ${index % 2 === 0 ? "md:flex-row-reverse" : ""} gap-20 lg:m-20 min-[360px]:my-10`}>
                <div className=''>

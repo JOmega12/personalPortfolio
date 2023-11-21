@@ -5,8 +5,8 @@ export const FooterSkills = () => {
       <span>
         <a href="">
           <svg
-            width="30"
-            height="30"
+            width="40"
+            height="40"
             viewBox="0 0 48 48"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -29,10 +29,10 @@ export const FooterSkills = () => {
         </a>
       </span>
       <span>
-        <a href="">
+        <a href="https://github.com/JOmega12" target="_blank">
           <svg
-            width="30"
-            height="30"
+            width="40"
+            height="40"
             viewBox="0 0 48 48"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -48,10 +48,10 @@ export const FooterSkills = () => {
         </a>
       </span>
       <span>
-        <a href="">
+        <a href="https://www.linkedin.com/in/jensen-omega-61854514b/" target="_blank">
           <svg
-            width="30"
-            height="30"
+            width="40"
+            height="40"
             viewBox="0 0 48 48"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"

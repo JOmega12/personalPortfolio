@@ -5,6 +5,7 @@ import Line from '../assets/Line 1.svg';
 import BackgroundCircle from '../assets/Ellipse 13.svg';
 // import styles from './Hero.module.css';
 
+
 export const Hero = () => {
 //  !need to work on circle shadow behind profile photo
    return(
@@ -53,11 +54,12 @@ export const Hero = () => {
             </div>
          </div>
          <div className='w-[350px] relative min-[360px]:mt-20 md:mt-10'>
-            <div className={`circle absolute z-0 `}>
+            <div className={`circle absolute z-0`}>
                <img src={BackgroundCircle} alt="Profile Photo Background" 
                className=''/>
             </div>
             <div className='z-0 relative bottom-14 right-2'>
+               {/* <div className={`${styles.heroSection}`}></div> */}
                <img src={ProfilePhoto} alt="Jensen's Profile Photo" 
                className='w-full h-full'
                />

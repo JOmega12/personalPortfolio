@@ -1,6 +1,7 @@
 // import './App.css'
 
 import { AboutMe } from "./Components/AboutMe"
+import { Contact } from "./Components/Contact"
 import { Footer } from "./Components/Footer"
 import { Hero } from "./Components/Hero"
 import { Navbar } from "./Components/Navbar/Navbar"
@@ -8,6 +9,12 @@ import { Projects } from "./Components/Projects"
 
 function App() {
 
+  // !finish contact page
+    // ?eventually hook it up to your own email
+  // !design animation fade in-out
+  // !hook up scroll wheel when clciked navbar framework
+  // !finish mapping and links
+  // !add resume button in hero page
   return (
     <div className="bg-[#121E27]">
       <Navbar />
@@ -17,7 +24,7 @@ function App() {
         <Hero />
         <AboutMe />
         <Projects />
-        
+        <Contact />
       </div>
       <Footer />
     </div>
