@@ -9,11 +9,13 @@ export const Projects = () => {
 // ** mc: #ff715b
    
    const projectInfo= [
-      { skills: ['HTML/CSS', 'Tailwind', 'Typescript', 'Javascript', 'React-Router'], name: 'WelcomeCoffee', description: 'This project utilizes various technologies to enable users to create personalized coffee ingredients. Upon logging in, users can access their favorite coffee data. It applies React and JavaScript concepts, from abstracting components to managing data structures. Additionally, it establishes a JSON server to generate an API for tracking user favorites and login details.', image: WelcomeCoffeeImage,},
-      // { skills: ['HTML/CSS', 'Javascript'], name: 'Ecommerce Website', description: '', image: '',},
-      // { skills: ['HTML/CSS', 'Node.Js', 'Javascript'], name: 'Battleship', description: 'Used Javascript to implement basic data structures through the game of Battleship. Used a terminal to display ships and tracked where ships are hit or missed with the help of Node.js', image: '',},
-      { skills: ['HTML/CSS', 'Node.Js', 'Javascript'], name: 'Movie Titles API', description: 'Uses a public movie API to build a collection movie list that sorts from A to Z or vice versa. It also counts how many movies in each container and adds user\'s favorite movies into another container', image: MovieTitlesImage,},
-      // { skills: ['HTML/CSS', '', 'Javascript'], name: 'Javascript Calculator', description: 'Uses simple algorithm concepts in Javascript to produce an arithmetic result in a terminal', image: '',},
+      { skills: ['HTML/CSS', 'Tailwind', 'Typescript', 'Javascript', 'React-Router'], name: 'WelcomeCoffee', description: 'This project utilizes various technologies to enable users to create personalized coffee ingredients. Upon logging in, users can access their favorite coffee data. It applies React and JavaScript concepts, from abstracting components to managing data structures. Additionally, it establishes a JSON server to generate an API for tracking user favorites and login details.', image: WelcomeCoffeeImage, projectLink: '', githubLink: 'https://github.com/JOmega12/welcomeCoffee'},
+      { skills: ['HTML/CSS', 'Tailwind', 'Typescript', 'Javascript', 'React-Router', 'Version Control'], name: 'PookiePaws Dog Cafe', description: 'I spearheaded a collaborative effort with a team of five students, strategically assigning roles that aligned with each member\'s skill set and level of expertise. Leveraging version control and drawing upon our collective skill sets, we successfully navigated a hackathon challenge. Our primary objective was the development of a Dog Cafe platform, empowering users to seamlessly schedule appointments for their beloved pets at their convenience.', image: WelcomeCoffeeImage, projectLink: '', githubLink: 'https://github.com/JOmega12/hackathon-devlopes'},
+      // !rework the ecommerce website by recording the website and describing it
+      // { skills: ['HTML/CSS', 'Javascript'], name: 'Ecommerce Website', description: 'I created an ecommerce site that utilized value in state and props in a class state anticipating other websites that still uses class components It was designed with vanilla CSS and used React to pass down props to manage state. ', image: '', projectLink: '', githubLink: 'https://github.com/JOmega12/code-commerce2'},
+      // { skills: ['HTML/CSS', 'Node.Js', 'Javascript'], name: 'Battleship', description: 'Used Javascript to implement basic data structures through the game of Battleship. Used a terminal to display ships and tracked where ships are hit or missed with the help of Node.js', image: '', projectLink: '', githubLink: ''},
+      { skills: ['HTML/CSS', 'Node.Js', 'Javascript'], name: 'Movie Titles API', description: 'Uses a public movie API to build a collection movie list that sorts from A to Z or vice versa. It also counts how many movies in each container and adds user\'s favorite movies into another container', image: MovieTitlesImage, projectLink: '', githubLink: 'https://github.com/JOmega12/MovieAPI-Project'},
+      // { skills: ['HTML/CSS', '', 'Javascript'], name: 'Javascript Calculator', description: 'Uses simple algorithm concepts in Javascript to produce an arithmetic result in a terminal', image: '', projectLink: '', githubLink: ''},
 
    ]
    return(
@@ -46,8 +48,8 @@ export const Projects = () => {
                   </ul>
                   <p className='text-base md:leading-7 mb-5'>{item.description}</p>
                   <div className='flex flex-row gap-8 max-[765px]:justify-center'>
-                     <a className='bg-[#FF715B] px-4 py-2 cursor-pointer hover:bg-[#ff5b42]'>View Github</a>
-                     <a className=' px-4 py-2 underline underline-offset-8 decoration-[#FF715B] flex flex-row gap-1 cursor-pointer hover:decoration-[#ff5b42] hover:text-[#ff5b42]'>
+                     <a href={item.githubLink} target="_blank" className='bg-[#FF715B] px-4 py-2 cursor-pointer hover:bg-[#ff5b42]'>View Github</a>
+                     <a href="" target="_blank" className=' px-4 py-2 underline underline-offset-8 decoration-[#FF715B] flex flex-row gap-1 cursor-pointer hover:decoration-[#ff5b42] hover:text-[#ff5b42]'>
                         <p>View Project</p>
                         <span className='min-[360px]:mt-1 md:mt-5 lg:mt-1 '><img src={Arrow} alt="arrow"/></span>
                      </a>
