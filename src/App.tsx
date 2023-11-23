@@ -15,6 +15,8 @@ function App() {
   // !hook up scroll wheel when clciked navbar framework
   // !finish mapping and links
   // !add resume button in hero page
+
+  
   return (
     <div className="bg-[#121E27]">
       <Navbar />
