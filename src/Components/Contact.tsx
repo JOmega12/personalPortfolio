@@ -12,7 +12,6 @@ import emailjs from "@emailjs/browser";
 export const Contact = () => {
    const form = useRef();
 
-
    const [nameInput, setNameInput] = useState('');
    const [emailInput, setEmailInput] = useState('');
    const [messageInput, setMessageInput] = useState('');
@@ -25,7 +24,6 @@ export const Contact = () => {
       }, (error) => {
           console.log(error.text);
       });
-      // e.target.reset();
       setNameInput('');
       setEmailInput('');
       setMessageInput('');
@@ -34,11 +32,10 @@ export const Contact = () => {
 
    return(
       <>
-         <section className="pb-10">
+         <section className="pb-10" id="contact">
             <h2 className="text-5xl font-semibold text-center underline underline-offset-[12px] pb-14 decoration-[#FF715B]">Contact</h2>  
             <form className="parent flex md:flex-row min-[360px]:flex-col min-[360px]:gap-10 md:gap-40" onSubmit={(e) => onSubmit(e)}
-            ref={form}
-            >
+            ref={form}>
                <div className="leftSide w-full">
                   <div className="min-[360px]:text-3xl md:text-[53px] font-bold pb-5 min-[360px]:text-center md:text-left md:leading-normal">
                      <h2 className="">Have a project?</h2>

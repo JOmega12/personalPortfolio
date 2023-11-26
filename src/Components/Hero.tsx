@@ -10,16 +10,14 @@ export const Hero = () => {
 //  !need to work on circle shadow behind profile photo
    return(
       <section className="flex flex-col md:flex-row min-[368px]:flex-col md:gap-1 lg:gap-6 sm:pt-20 md:pt-0 min-[360px]:mt-20 md:mt-36 md:ml-5 lg:ml-0">
-
          <div className='flex flex-col max-[765px]:items-center '>
             <div className='flex min-[360px]:mt-2'>
-               <h2 className='md:text-5xl min-[360px]:text-3xl font-bold '>Hello</h2>
+               <h2 className='md:text-5xl min-[360px]:text-3xl font-bold' id='/'>Hello</h2>
                <div className='ml-[2px]'>
                   <img src={Period} alt="period" 
                   className='ml-1 min-[360px]:mt-[1.50rem] md:mt-8'/>
                </div>
             </div>
-
             <div className=' relative
             md:ml-24 lg:ml-2 p-4 min-[360px]:items-center lg:text-center
             min-[360px]:ml-0 min-[360px]:py-5

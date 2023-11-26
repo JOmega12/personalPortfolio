@@ -21,8 +21,8 @@ export const Projects = () => {
 
    ]
    return(
-      <section className="min[360px]:px-4 md:px-10 lg:px-16">
-         <div className='m-10 mb-20'>
+      <section className="min[360px]:px-4 md:px-10 lg:px-16" >
+         <div className='m-10 mb-20' id='projects'>
             <h1 className="text-[53px] font-bold mb-16 text-center">Projects</h1>
             <div className='flex flex-col justify-center gap-2'>
                <div className="line">
@@ -37,8 +37,6 @@ export const Projects = () => {
                </div>
             </div>
          </div>
-         <img src="../assets/ProjectImages/movietitles2.png" alt="" />
-
          {projectInfo.map((item, index) => (   
             <div key={index} className={`flex min-[360px]:flex-col md:flex-row ${index % 2 === 0 ? "md:flex-row-reverse" : ""} gap-20 lg:m-20 min-[360px]:my-10`}>
                <div className=''>

@@ -16,7 +16,6 @@ function App() {
   // !abstract the project and contact page
   // !add video links to the projects
 
-  
   return (
     <div className="bg-[#121E27]">
       <Navbar />
