@@ -41,15 +41,14 @@ export const Hero = () => {
                </span>
             </h1>
             <div className='flex md:gap-10 min-[360px]:gap-4 min-[360px]:mt-10 md:mt-6 lg:mt-10'>
-               <div className='bg-[#FF715B] md:px-4 md:py-2 md:text-lg
-                  min-[360px]:px-6 min-[360px]:py-4 
+               <div className='bg-[#FF715B] md:px-4 md:py-2 md:text-lg min-[360px]:px-6 min-[360px]:py-4 hover:bg-transparent hover:cursor-pointer
                '>
                   <a href="" className='font-Montserrat font-Inter font-sans text-lg'>Got A Project?</a>
                </div>
-               <div className='md:px-8 md:py-2 border-[#FF715B] border-2 md:text-lg
-               min-[360px]:px-12 min-[360px]:py-4
+               <div className='md:px-4 md:py-2 border-[#FF715B] border-2 md:text-lg
+               min-[360px]:px-6 min-[360px]:py-4 hover:bg-[#ff5b42] hover:cursor-pointer
                '>
-                  <a href="" className='font-Montserrat font-Inter font-sans'>Contact</a>
+                  <a href="" className='font-Montserrat font-Inter font-sans'>My Resume</a>
                </div>
             </div>
          </div>
