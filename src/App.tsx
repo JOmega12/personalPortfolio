@@ -9,12 +9,12 @@ import { Projects } from "./Components/Projects"
 
 function App() {
 
-  // !finish contact page
-    // ?eventually hook it up to your own email
   // !design animation fade in-out
   // !hook up scroll wheel when clciked navbar framework
   // !finish mapping and links
   // !add resume button in hero page
+  // !abstract the project and contact page
+  // !add video links to the projects
 
   
   return (
