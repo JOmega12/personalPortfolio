@@ -3,13 +3,14 @@ import ProfilePhoto from '../assets/ProfileCopy1.png';
 import Period from '../assets/period.svg';
 import Line from '../assets/Line 1.svg';
 import BackgroundCircle from '../assets/Ellipse 13.svg';
-// import styles from './Hero.module.css';
+import "./custom.css";
 
 
 export const Hero = () => {
-//  !need to work on circle shadow behind profile photo
    return(
-      <section className="flex flex-col md:flex-row min-[368px]:flex-col md:gap-1 lg:gap-6 sm:pt-20 md:pt-0 min-[360px]:mt-20 md:mt-36 md:ml-5 lg:ml-0">
+      <section 
+      className="flex flex-col md:flex-row min-[368px]:flex-col md:gap-1 lg:gap-6 sm:pt-20 md:pt-0 min-[360px]:mt-20 md:mt-36 md:ml-5 lg:ml-0 fade-in"
+      >
          <div className='flex flex-col max-[765px]:items-center '>
             <div className='flex min-[360px]:mt-2'>
                <h2 className='md:text-5xl min-[360px]:text-3xl font-bold' id='/'>Hello</h2>
@@ -56,7 +57,6 @@ export const Hero = () => {
                className=''/>
             </div>
             <div className='z-0 relative bottom-14 right-2'>
-               {/* <div className={`${styles.heroSection}`}></div> */}
                <img src={ProfilePhoto} alt="Jensen's Profile Photo" 
                className='w-full h-full'
                />

@@ -2,7 +2,7 @@ import { useState } from "react";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {Link} from 'react-scroll';
-
+import "../custom.css"
 
 const NavLinks = () => {
   const list = [
@@ -30,7 +30,7 @@ export const Navbar = () => {
   };
 
   return (
-    <header className="">
+    <header className="fade-in">
       <nav className='flex items-center bg-[#121E27] text-white w-full p-5 fixed max-[900px]:w-full z-10 text-center'>
         <h2 className='text-3xl font-bold tracking-wide cursor-pointer max-[640px]:pl-5 md:pl-8 lg:pl-32'>Jensen Omega</h2>
         <div className='hidden md:flex flex-row text-xl ml-auto md:pr-3 lg:pr-40'>

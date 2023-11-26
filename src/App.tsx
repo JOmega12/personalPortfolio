@@ -9,12 +9,10 @@ import { Projects } from "./Components/Projects"
 
 function App() {
 
-  // !design animation fade in-out
-  // !hook up scroll wheel when clciked navbar framework
   // !finish mapping and abstract links
+  // !add video links to the projects
   // !add resume button in hero page
   // !abstract the project and contact page
-  // !add video links to the projects
 
   return (
     <div className="bg-[#121E27]">

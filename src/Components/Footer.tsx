@@ -9,7 +9,6 @@ export const Footer = () => {
           Designed with love, all rights reserved for Jensen Omega
         </p>
         <div className="flex flex-row gap-2 pb-4">
-          {/* map items here */}
           <FooterSkills />
         </div>
       </div>
