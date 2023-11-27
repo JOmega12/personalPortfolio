@@ -2,7 +2,7 @@ import { FormEvent, useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
 export const Contact = () => {
-   const form = useRef();
+   const form = useRef<HTMLFormElement | null>(null);
 
    const [nameInput, setNameInput] = useState('');
    const [emailInput, setEmailInput] = useState('');
@@ -10,7 +10,14 @@ export const Contact = () => {
 
    const onSubmit = (e: FormEvent<HTMLFormElement>) => {
       e.preventDefault();
-      emailjs.sendForm('service_ktf3kla', 'template_z77a111', form.current, 'gI6ktg-ThFCnM2tTi')
+
+      const currentForm = form.current;
+      if(!currentForm) {
+         console.error("Form reference is null or undefined");
+         return;
+      }
+
+      emailjs.sendForm('service_ktf3kla', 'template_z77a111', currentForm, 'gI6ktg-ThFCnM2tTi')
       .then((result) => {
           console.log(result.text);
       }, (error) => {
