@@ -1,13 +1,5 @@
 import { FormEvent, useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
-// import { EmailJSResponseStatus } from "@emailjs/browser";
-
-
-// type ContactT = {
-//    name: string;
-//    email: string;
-//    message: string;
-// }
 
 export const Contact = () => {
    const form = useRef();

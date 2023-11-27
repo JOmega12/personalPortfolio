@@ -9,10 +9,8 @@ import { Projects } from "./Components/Projects"
 
 function App() {
 
-  // !finish mapping and abstract links
   // !add video links to the projects
   // !add resume button in hero page
-  // !abstract the project and contact page
 
   return (
     <div className="bg-[#121E27]">
