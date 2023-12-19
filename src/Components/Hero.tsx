@@ -3,6 +3,7 @@ import ProfilePhoto from '../assets/ProfileCopy1.png';
 import Period from '../assets/period.svg';
 import Line from '../assets/Line 1.svg';
 import BackgroundCircle from '../assets/Ellipse 13.svg';
+import Resume from '../assets/Resume.pdf';
 import "./custom.css";
 
 
@@ -47,7 +48,7 @@ export const Hero = () => {
                <div className='md:px-4 md:py-2 border-[#FF715B] border-2 md:text-lg
                min-[360px]:px-6 min-[360px]:py-4 hover:bg-[#ff5b42] hover:cursor-pointer
                '>
-                  <a href="" className='font-Montserrat font-Inter font-sans'>My Resume</a>
+                  <a href={Resume} className='font-Montserrat font-Inter font-sans' target="_blank">My Resume</a>
                </div>
             </div>
          </div>
