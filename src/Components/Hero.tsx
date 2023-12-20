@@ -3,7 +3,7 @@ import ProfilePhoto from '../assets/ProfileCopy1.png';
 import Period from '../assets/period.svg';
 import Line from '../assets/Line 1.svg';
 import BackgroundCircle from '../assets/Ellipse 13.svg';
-import Resume from '../assets/Resume.pdf';
+import Resume from '../assets/TechResume.pdf';
 import "./custom.css";
 
 
