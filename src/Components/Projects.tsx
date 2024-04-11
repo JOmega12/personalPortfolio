@@ -52,7 +52,7 @@ export const Projects = () => {
                 View Github
               </a>
               <a
-                href=""
+                href= {item.projectLink === "" ? "" : item.projectLink}
                 target="_blank"
                 className=" px-4 py-2 underline underline-offset-8 decoration-[#FF715B] flex flex-row gap-1 cursor-pointer hover:decoration-[#ff5b42] hover:text-[#ff5b42]"
               >

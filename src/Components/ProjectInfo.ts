@@ -17,7 +17,7 @@ export const projectInfo = [
     description:
       "This project utilizes various technologies to enable users to create personalized coffee ingredients. Upon logging in, users can access their favorite coffee data. It applies React and JavaScript concepts, from abstracting components to managing data structures. Additionally, it establishes a JSON server to generate an API for tracking user favorites and login details.",
     image: WelcomeCoffeeImage,
-    projectLink: "",
+    projectLink: "https://welcomecoffee-frontend.onrender.com/",
     githubLink: "https://github.com/JOmega12/welcomeCoffee",
   },
   {
@@ -61,7 +61,7 @@ export const projectInfo = [
     description:
       "Uses a public movie API to build a collection movie list that sorts from A to Z or vice versa. It also counts how many movies in each container and adds user's favorite movies into another container",
     image: MovieTitlesImage,
-    projectLink: "",
+    projectLink: "https://movie-api-project.vercel.app/",
     githubLink: "https://github.com/JOmega12/MovieAPI-Project",
   },
   // { skills: ['HTML/CSS', '', 'Javascript'], name: 'Javascript Calculator', description: 'Uses simple algorithm concepts in Javascript to produce an arithmetic result in a terminal', image: '', projectLink: '', githubLink: ''},
